@@ -1,0 +1,139 @@
+*
+{
+    padding : 0;
+    margin :0;
+    box-sizing: border-box;
+}
+body
+{
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width : 742px)
+{
+    .margin
+    {
+        margin: 1rem;
+    }
+}
+@media (min-width : 724px) and (max-width : 1024px)
+{
+    .margin{
+        margin: 2rem;
+    }
+}
+.row
+{
+    margin: 2rem;
+}
+.cart
+{
+    width: 200px;
+    height: 250px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #ccc;
+    padding: 12px 19px;
+    position: relative;
+}
+.cart_hot
+{
+    position: absolute;
+    top: 4px;
+    left: 1rem;
+    background-color: red;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+}
+.cart-img
+{
+   text-align: center;
+}
+
+.cart__img
+{
+    width: 80%;
+    height: 80%;
+}
+.cart__content
+{
+    font-size: 10px;
+    margin-top: 15px;
+}
+.cart-title
+{
+    font-weight: 400;
+    color : #888;
+    margin-bottom: 4px;
+}
+.cart__name
+{
+    font-weight: 500;
+}
+.cart-rating
+{
+   display: inline-block;
+   margin-top: 6px;
+   /* margin-right: 4px ; */
+   color: orange;
+}
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cart__price
+{
+    display: flex;
+    font-size: 12px;
+}
+.cart__price-current
+{
+    margin-right: 4px;
+}
+.cart__price-old
+{
+    text-decoration: line-through;
+    color: #888;
+}
+.cart__submit
+{
+    background-color: rgb(75, 170, 75);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+.cart__submit:hover
+{
+    background-color: rgb(75, 132, 75);
+}
+.cart__icon
+{
+   
+}
+.cart__submit span
+{
+   
+}
+.cart:hover
+{
+    cursor: pointer;
+    border: 1px solid rgb(22, 111, 22);
+    box-shadow: 0 2px 2px rgb(22, 111, 22);
+    animation : fadeIn ease-in 0.2s;
+    transition:  all ease-in 0.3s;
+}
+@keyframes fadeIn {
+    from{
+       transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
